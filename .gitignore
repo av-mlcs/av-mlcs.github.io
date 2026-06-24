@@ -1,0 +1,5 @@
+old/
+temp/
+scratchpad/
+node_modules/
+.DS_Store

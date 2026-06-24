@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People · Students — MLCS, Yonsei University</title>
+  <meta name="description" content="Graduate students of the MLCS Lab, Yonsei University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Work+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav"></header>
+
+  <main class="page">
+    <header class="page-head">
+      <p class="eyebrow">People</p>
+      <h1>Students</h1>
+      <div class="page-head__tags" data-filter-target=".person"><span class="tag tag--all" data-filter="all">All</span> <span class="tag tag--rob" data-filter="rob">Robotics</span> <span class="tag tag--av" data-filter="av">AV</span> <span class="tag tag--mv" data-filter="mv">MV</span></div>
+    </header>
+
+    <section class="section section--tight">
+      <!-- Cards rendered from /js/students.js -->
+      <div id="students"></div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact"></footer>
+
+  <script src="/js/students.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

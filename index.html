@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MLCS — Machine Learning &amp; Control Systems Lab, Yonsei University</title>
+  <meta name="description" content="Machine Learning & Control Systems (MLCS) Lab, Yonsei University — autonomous vehicle and robotics research. Internship opportunities for students." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Work+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav"></header>
+
+  <!-- TOP BANNER: full-width lab identity band -->
+  <section class="banner">
+    <div class="banner__inner">
+      <h1>Machine Learning &amp; Control Systems Lab</h1>
+      <p class="banner__sub">Yonsei University · Mechanical Engineering</p>
+      <p class="banner__desc">We study autonomous vehicles and robotics, blending control theory and machine learning — and we're looking for curious students to build it with us.</p>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- LEAD: featured papers carousel + latest news -->
+    <section class="band">
+      <div class="band__inner">
+        <div class="lead">
+          <div class="carousel" id="featured">
+            <p class="label">Featured papers</p>
+            <div class="carousel__viewport">
+              <!-- Filled by /js/main.js: papers flagged data-home in /publications/ -->
+              <div class="carousel__track" id="featured-track"></div>
+              <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous">&lsaquo;</button>
+              <button class="carousel__arrow carousel__arrow--next" aria-label="Next">&rsaquo;</button>
+            </div>
+            <div class="carousel__dots"></div>
+          </div>
+
+          <aside class="news">
+            <p class="label">Lab News</p>
+            <h2>Latest</h2>
+            <!-- Filled by /js/main.js from the NEWS data in /js/news.js (latest 4) -->
+            <div id="news-latest"></div>
+            <a class="news__more" href="/news/">All news &rarr;</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION -->
+    <section class="band">
+      <div class="band__inner">
+        <div class="band__head"><p class="label">Vision</p><h2 style="margin-top:12px">What we strive for</h2></div>
+        <div class="vision">
+          <p>We strive to solve challenging societal problems by exploiting powerful modern computational and mathematical techniques from artificial intelligence, machine learning, systems and control, reinforcement learning, optimization, and Bayesian inference. Our research seeks to bridge advances in artificial intelligence with real-world decision-making and autonomy, enabling intelligent systems that can reason, learn, adapt, and interact effectively in complex and uncertain environments.</p>
+          <p>Our recent work focuses on Physical AI and Embodied Intelligence, with particular emphasis on spatial intelligence for autonomous systems. We investigate how high-level world reasoning, long-horizon planning, perception, and precision control can be integrated into a unified framework for intelligent decision-making and action. To this end, we develop data-efficient learning and control algorithms that combine foundation models, vision-language-action (VLA) models, world models, diffusion-based generative models, reinforcement learning, and geometric machine learning.</p>
+          <p>Research topics in our laboratory include robot manipulation, humanoid and mobile robotics, multi-robot systems, autonomous driving and racing, human-robot interaction, inverse reinforcement learning, offline reinforcement learning, diffusion-based planning and control, equivariant learning, probabilistic decision making, and human-centered AI. We are particularly interested in exploiting geometric symmetries, structured world representations, and uncertainty-aware reasoning to improve generalization, robustness, and sample efficiency.</p>
+          <p>Our research is highly interdisciplinary and is conducted in close collaboration with scientists, clinicians, and industrial partners in robotics, mobility, healthcare, and manufacturing. By synergistically combining modern AI with control theory, optimization, system identification, and statistical inference, we aim to develop intelligent systems capable of understanding, reasoning about, and safely interacting with the physical world.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="band band--alt">
+      <div class="band__inner">
+        <div class="band__head"><p class="label">Research</p><h2 style="margin-top:12px">What we work on</h2></div>
+        <!-- Filled by /js/research.js -->
+        <div class="cards" id="home-research"></div>
+        <p class="pubs__more"><a href="/research/">All research &rarr;</a></p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="band">
+      <div class="band__inner">
+        <div class="band__head"><p class="label">Current projects</p><h2 style="margin-top:12px">What's running now</h2></div>
+        <!-- Filled by /js/projects.js (ongoing projects) -->
+        <div class="projects" id="home-projects"></div>
+        <p class="pubs__more"><a href="/projects/">All projects &rarr;</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contact"></footer>
+
+  <script src="/js/news.js"></script>
+  <script src="/js/featured.js"></script>
+  <script src="/js/projects.js"></script>
+  <script src="/js/research.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
