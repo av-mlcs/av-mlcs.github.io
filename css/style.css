@@ -133,6 +133,19 @@ h1, h2, h3, h4 { font-family: var(--display); color: var(--ink); letter-spacing:
 .vision p { font-size: var(--fs-base); color: var(--ink-soft); margin-bottom: 16px; }
 .vision p:last-child { margin-bottom: 0; }
 
+/* ===== Our Teams (home: Robotics / Autonomous Vehicle entry cards) ===== */
+.teams { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.team { display: block; padding: 30px 30px 26px; background: var(--paper); border: 1px solid var(--line); border-top: 4px solid var(--line); border-radius: 16px; transition: transform .2s, box-shadow .2s, border-color .2s; }
+.team:hover { transform: translateY(-4px); box-shadow: 0 14px 36px rgba(12,19,32,.08); }
+.team h3 { font-size: var(--fs-lg); font-weight: 700; margin-bottom: 12px; }
+.team p { color: var(--ink-soft); font-size: var(--fs-sm); margin-bottom: 18px; }
+.team__more { font-weight: 700; font-size: var(--fs-sm); }
+.team--rob { border-top-color: #6d3fe0; }
+.team--rob .team__more { color: #6d3fe0; }
+.team--av { border-top-color: #0d8276; }
+.team--av .team__more { color: #0d8276; }
+@media (max-width: 760px) { .teams { grid-template-columns: 1fr; } }
+
 /* ===== Cards (home research summary) ===== */
 .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .card { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 26px 22px; transition: border-color .2s, transform .2s, box-shadow .2s; }

@@ -192,5 +192,8 @@ document.querySelectorAll(".page-head__tags[data-filter-target]").forEach((bar) 
       apply();
     })
   );
-  apply(); // initial state: "All" active
+  // deep link: /research/?team=rob (or av/mv) pre-selects that filter
+  const team = new URLSearchParams(location.search).get("team");
+  if (team && btns.some((b) => b.dataset.filter === team)) active = team;
+  apply();
 });
