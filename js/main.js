@@ -22,10 +22,6 @@ const PAGES = [
 ];
 const EMAIL = "jongeunchoi@yonsei.ac.kr";
 
-// AV logo mark (size in px)
-const mark = (s) =>
-  `<svg viewBox="0 0 32 32" width="${s}" height="${s}"><path d="M3 25 H29" stroke="currentColor" stroke-width="2" stroke-dasharray="5 4"/><circle cx="11" cy="25" r="3.2" fill="currentColor"/><path d="M9 17 L20 9" stroke="currentColor" stroke-width="2"/><circle cx="21" cy="8" r="2.4" fill="currentColor"/></svg>`;
-
 // Highlight the current tab. Home matches only the root; others match their folder prefix.
 const path = location.pathname;
 const isActive = (p) =>
@@ -43,7 +39,6 @@ const navHtml = PAGES.map((p) => {
 document.getElementById("nav").innerHTML = `
   <div class="nav__inner">
     <a href="/" class="brand">
-      <span class="brand__mark" aria-hidden="true">${mark(32)}</span>
       <span class="brand__text">MLCS <em>Yonsei University</em></span>
     </a>
     <nav class="nav__links" id="navLinks">${navHtml}</nav>
@@ -55,7 +50,6 @@ document.getElementById("contact").innerHTML = `
   <div class="footer__inner">
     <div class="footer__col footer__brand">
       <span class="brand brand--footer">
-        <span class="brand__mark" aria-hidden="true">${mark(28)}</span>
         <span class="brand__text">MLCS <em>Yonsei University</em></span>
       </span>
       <p class="footer__addr">Machine Learning &amp; Control Systems Lab<br />School of Mechanical Engineering, Yonsei University<br /> 50 Yonsei Ro, Seodaemun Gu, Seoul 03722, Republic of Korea</p>
